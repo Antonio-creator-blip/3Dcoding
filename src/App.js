@@ -3,12 +3,12 @@ import './App.css';
 
 function App() {
   return (
+    <head><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1177424109213013"
+     crossorigin="anonymous"></script></head>
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1177424109213013"
-     crossorigin="anonymous"></script>
           <code>App.js</code>
         </p>
         <a
