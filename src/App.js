@@ -9,7 +9,7 @@ function App() {
         <p>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1177424109213013"
      crossorigin="anonymous"></script>
-          Edit <code>src/App.js</code> and save to reload.
+          <code>src/App.js</code>
         </p>
         <a
           className="App-link"
