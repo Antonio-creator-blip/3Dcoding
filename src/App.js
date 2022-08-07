@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-pascal-case */
+/* eslint-disable react/jsx-no-comment-textnodes */
 import './App.css';
 import NavBar_component from './components/NavBar';
 import Home from './components/Home/Home.js';
