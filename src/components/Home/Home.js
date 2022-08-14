@@ -8,15 +8,20 @@ import Button from 'react-bootstrap/Button';
 import Popover from 'react-bootstrap/Popover';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
-import {FaDiscord, FaInstagram, FaTiktok} from 'react-icons/fa'
+import {FaDiscord, FaInstagram, FaTiktok, FaPython, FaJava, FaJs, FaPhp, FaHtml5, FaCss3, FaReact, FaVuejs,FaAngular} from 'react-icons/fa'
 
+import autocad from '../../img/icons/autocad.svg';
+import fusion from '../../img/icons/fusion.svg';
+import inventor from '../../img/icons/inventor.svg';
+import rasp from '../../img/icons/rasp.svg';
+import arduino from '../../img/icons/arduino.svg';
 
 
 function Home() {
   const web = [
     {
       language:'HTML',
-      text: "HyperText Markup Language.Markup Language to create a website."
+      text: "HyperText Markup Language Markup Language to create a website."
     },
     {
       language:'CSS',
@@ -166,7 +171,7 @@ function Home() {
                       </Popover>
   );
   return (
-    <div id='Home'>
+    <div className='color'>
         <div className='title'>
             <h1>Learning is easier now</h1>
             <h2>With a complete site.<br />
@@ -213,6 +218,38 @@ function Home() {
                 </Col>
               </Row>
             </Container>
+          </div>
+          <div className='div-icons-languages'>
+          <Container>
+            <Row>
+              <Col><FaPython size={'16vw'} className='icons-languages' href='/python'></FaPython></Col>
+              <Col><FaJava size={'16vw'} className='icons-languages' href='/java'></FaJava></Col>
+            </Row>
+            <Row>
+              <Col><FaJs size={'16vw'} className='icons-languages' href='/js'></FaJs></Col>
+              <Col><FaPhp size={'16vw'} className='icons-languages' href='/php'></FaPhp></Col>
+            </Row>
+            <Row>
+              <Col><FaHtml5 size={'16vw'} className='icons-languages' href='/html'></FaHtml5></Col>
+              <Col><FaCss3 size={'16vw'} className='icons-languages' href='/css'></FaCss3></Col>
+            </Row>
+            <Row>
+              <Col><FaReact size={'16vw'} className='icons-languages' href='/react'></FaReact></Col>
+              <Col><FaVuejs size={'16vw'} className='icons-languages' href='/vue'></FaVuejs></Col>
+            </Row>
+            <Row>
+              <Col><FaAngular size={'16vw'} className='icons-languages' href='/angular'></FaAngular></Col>
+              <Col><img  src={autocad} alt="arduino" srcset="" size={'16vw'} className='icons-languages' href='/autocad'/></Col>
+            </Row>
+            <Row>
+              <Col><img  src={arduino} alt="arduino" srcset="" size={'16vw'} className='icons-languages' href='/arduino'/></Col>
+              <Col><img src={fusion} alt="arduino" srcset="" size={'16vw'} className='icons-languages' href='/fusion'/></Col>
+            </Row>
+            <Row>
+              <Col><img src={rasp} alt="arduino" srcset="" size={'16vw'} className='icons-languages' href='/rasp'/></Col>
+              <Col><img src={inventor} alt="arduino" srcset="" size={'16vw'} className='icons-languages' href='/inventor'/></Col>
+            </Row>
+          </Container>
           </div>
           <div className='test'>
             <h3>Test what you learn!!!</h3>

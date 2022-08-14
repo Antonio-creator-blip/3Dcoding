@@ -1,4 +1,4 @@
-#Home div{
+.color div{
     background-color: #d0e3c4 !important;
 }
 
@@ -97,4 +97,15 @@ footer button{
 .icon{
     margin-left: 2vw;
     margin-right: 2vw;
+}
+
+.div-icons-languages{
+  margin-top: 10vh; 
+  margin-bottom: 5vh;
+}
+
+.icons-languages{
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 5vh;
 }
