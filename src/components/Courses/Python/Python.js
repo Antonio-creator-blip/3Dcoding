@@ -1,16 +1,13 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
 import '../Courses.css';
 import '../../../App.css';
 import python01 from '../img/python01.jpg';
-import {useRef, useState, useEffect} from "react";
-import Button from 'react-bootstrap/Button';
+import {useState} from "react";
 import Install from './Py_Install.js'
 
 function Python(){
-    const cardRef = useRef();
-    const[data,setData] = useState(1)
     const[i,setI] = useState(0)
-    const[dir,setDir] = useState()
 
     const array = [
         <Install></Install>,
