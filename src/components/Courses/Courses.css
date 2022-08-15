@@ -46,8 +46,11 @@
     height: 5vh;
     border-radius: 2.5vw;
 }
-.intro{
+.intro, .instruction{
     text-align: left;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 4vh;
 }
 .intro h2{
     padding-top: 4vh;
@@ -103,6 +106,9 @@ div .cmd{
 
 .gif img{
     max-width: 80vw;
+}
+.instruction ol{
+    padding: 10vw;
 }
 .instruction .code{
     padding: 2vw;

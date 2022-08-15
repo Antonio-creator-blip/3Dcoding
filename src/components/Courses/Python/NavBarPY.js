@@ -30,7 +30,7 @@ function NavBar_component() {
             navbarScroll
             id="text-navbar"
           >
-            <Nav.Link href="/install" className='text-navbar'>Installation and Setup</Nav.Link>
+            <Nav.Link href="/python/install" className='text-navbar'>Installation and Setup</Nav.Link>
             <Nav.Link href="/python/start" className='text-navbar'> <a href="/python/start">Syntax</a> </Nav.Link>
             <NavDropdown title="Programming Languages" id="navbarScrollingDropdown" className='text-navbar'>
               <NavDropdown.Item href="/python" className='text-navbar-scroll'>Python</NavDropdown.Item>

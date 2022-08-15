@@ -2,16 +2,20 @@ import React from 'react';
 import '../Courses.css';
 import '../../Home/Home.css';
 import '../../../App.css'
+import NavBarPY from './NavBarPY.js'
+import '../../../App.css'
 
 function Py_start() {
     document.title = "Python Syntax"
     return (
       <>
-      
-        <div className="intro">
+      <NavBarPY></NavBarPY>
+            <div className="color">
+            <div className="intro">
             <h2>Python Syntax</h2>
             Syntax is the first thing you need to learn. It is a set of rules and they are different for all programming languages.
             If we don't follow this rules, we will get an error of syntax from the code.
+            </div>
             <div className="br"></div>
             <div className='instruction'>
                 <ol>
@@ -97,8 +101,9 @@ function Py_start() {
                         <code> can see it """</code>
                     </div>
                 </ol>
-                <code></code>
+                <div className="br"></div>
             </div>
+            
         </div>
         
        

@@ -1,6 +1,5 @@
 /* eslint-disable react/jsx-pascal-case */
 import React from 'react';
-import NavBar_component from '../NavBar.js';
 import './Home.css';
 import '../../App.css';
 import Container from 'react-bootstrap/Container';
@@ -11,7 +10,7 @@ import Popover from 'react-bootstrap/Popover';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import {FaDiscord, FaInstagram, FaTiktok, FaPython, FaJava, FaJs, FaPhp, FaHtml5, FaCss3, FaReact, FaVuejs,FaAngular} from 'react-icons/fa'
-
+import NavBar_component from '../NavBar.js';
 import autocad from '../../img/icons/autocad.svg';
 import fusion from '../../img/icons/fusion.svg';
 import inventor from '../../img/icons/inventor.svg';
