@@ -30,7 +30,7 @@ function NavBar_component() {
           >
             <Nav.Link href="#action1" className='text-navbar'><a href="/">Home</a></Nav.Link>
             <NavDropdown title="Programming Languages" id="navbarScrollingDropdown" className='text-navbar'>
-              <NavDropdown.Item href="/python" className='text-navbar-scroll'><a href="/python">Python</a></NavDropdown.Item>
+              <NavDropdown.Item href="/python" className='text-navbar-scroll'>Python</NavDropdown.Item>
               <NavDropdown.Item href="#action5" className='text-navbar-scroll'><a href="/js">JavaScript</a></NavDropdown.Item>
               <NavDropdown.Item href="#action5" className='text-navbar-scroll'><a href="/php">PHP</a></NavDropdown.Item>
               <NavDropdown.Item href="#action5" className='text-navbar-scroll'><a href="/c">C</a></NavDropdown.Item>
