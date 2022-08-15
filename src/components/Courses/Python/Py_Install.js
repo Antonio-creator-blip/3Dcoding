@@ -1,11 +1,14 @@
 import gif02 from './data/VsCode02.gif'
 import gif01 from './data/VsCode01.gif'
+import python01 from '../img/python01.jpg';
 
 function Py_Install() {
   return (
     <>
       <div className="intro">
+      <a href="https://www.pexels.com/it-it/foto/mani-scrivania-laptop-internet-4974912/" target="_blank" rel="noreferrer" ><img src={python01} alt="" className='img' /></a>
         <h2>Installation and Setup</h2>
+
         <div className="text-intro">
           Before to start, I have two question for you.
 

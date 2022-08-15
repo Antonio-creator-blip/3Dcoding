@@ -9,7 +9,7 @@
 .div-img h1{
     padding-left: 4vw;
     padding-right: 4vw;
-    padding-bottom: 5vh;
+    padding-bottom: 1vh;
     text-align: center;
 }
 .img{
@@ -24,13 +24,50 @@
     padding-top: 2vh;
     padding-left: 4vw;
     padding-right: 4vw;
+    padding-bottom: 4vh;
+    text-align: left;
 }
-
+.dictionary .button {
+    padding-top: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.dictionary .button div{
+    width: 40vw;
+}
+.dictionary .button button{
+    text-align: center;
+    background-color: #4d9078;
+    font-weight: bolder;
+    padding: 1vw;
+    width: 25vw;
+    height: 5vh;
+    border-radius: 2.5vw;
+}
 .intro{
     text-align: left;
-    
+}
+.intro h2{
+    padding-top: 4vh;
 }
 
+.arrow{
+    border: solid #f3b700;
+    border-width: 0 3px 3px 0 ;
+    display: inline-block;
+    padding: 3px;
+}
+
+.left{
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+.right{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
 .text-intro{
     font-size: 1em;
 }
@@ -53,7 +90,7 @@ div .cmd{
     padding: 1vw;
 
 }
-a, a:hover, a:focus, a:active {
+.instruction a, a:hover, a:focus, a:active {
   color: blue;
 }
 
@@ -66,4 +103,18 @@ a, a:hover, a:focus, a:active {
 
 .gif img{
     max-width: 80vw;
+}
+.instruction .code{
+    padding: 2vw;
+    padding-left: 4vw;
+    background-color: white !important;
+    font-size: 0.9em;
+}
+.inden{
+    padding-left: 50px;
+}
+
+.instruction ol .code code{
+    font-size: 1.25em;
+    font-weight: bold;
 }

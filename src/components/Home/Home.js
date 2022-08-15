@@ -1,4 +1,6 @@
+/* eslint-disable react/jsx-pascal-case */
 import React from 'react';
+import NavBar_component from '../NavBar.js';
 import './Home.css';
 import '../../App.css';
 import Container from 'react-bootstrap/Container';
@@ -18,6 +20,7 @@ import arduino from '../../img/icons/arduino.svg';
 
 
 function Home() {
+
   const web = [
     {
       language:'HTML',
@@ -171,7 +174,9 @@ function Home() {
                       </Popover>
   );
   return (
-    <div className='color'>
+    <div >
+      <NavBar_component></NavBar_component>
+        <div className="color">
         <div className='title'>
             <h1>Learning is easier now</h1>
             <h2>With a complete site.<br />
@@ -275,6 +280,7 @@ function Home() {
               <FaInstagram className='icon' size={25}/>
               <FaTiktok className='icon' size={25}/>
             </footer>
+        </div>
         </div>
     </div>
     );

@@ -2,11 +2,12 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import '../../../App.css';
+import '../../Home/Home.css'
 
 function NavBar_component() {
   return (
-    <div id="x">
-      <Navbar  expand="lg" className='navbar'>
+    <Navbar  expand="lg" id='navbar'>
       <Container fluid>
           <Navbar.Brand href="#home">
             <a href="/">
@@ -29,7 +30,8 @@ function NavBar_component() {
             navbarScroll
             id="text-navbar"
           >
-            <Nav.Link href="#action1" className='text-navbar'><a href="/">Home</a></Nav.Link>
+            <Nav.Link href="/install" className='text-navbar'>Installation and Setup</Nav.Link>
+            <Nav.Link href="/python/start" className='text-navbar'> <a href="/python/start">Syntax</a> </Nav.Link>
             <NavDropdown title="Programming Languages" id="navbarScrollingDropdown" className='text-navbar'>
               <NavDropdown.Item href="/python" className='text-navbar-scroll'>Python</NavDropdown.Item>
               <NavDropdown.Item href="#action5" className='text-navbar-scroll'><a href="/js">JavaScript</a></NavDropdown.Item>
@@ -62,7 +64,6 @@ function NavBar_component() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    </div>
   );
 }
 

@@ -1,46 +1,84 @@
-/* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
 import '../Courses.css';
 import '../../../App.css';
-import python01 from '../img/python01.jpg';
+import '../../Home/Home.css'
 import {useState} from "react";
 import Install from './Py_Install.js'
+import Start from './Py_start.js'
+import NavBarPY from './NavBarPY.js'
+import {Routes,Route} from "react-router-dom";
+
 
 function Python(){
     const[i,setI] = useState(0)
+    /*const showFile = () =>{
+        fetch(file)
+        .then(t => t.text()).then(text => {
+            console.log(text);
+        })
+    }
+
+    showFile()
+
+    
+    */
+
+    const[time,setTime] = useState(0)
+    if(localStorage.getItem('position') && time === 0){
+        setI(localStorage.getItem('position'))
+        setTime(1)
+    }
+
+    
+    
+    
+
+    localStorage.setItem('position', i);
+   
+    
+
+    
+    
 
     const array = [
         <Install></Install>,
-        "ciao2",
+        <Start></Start>,
         "ciao3"
     ]
-
     if(i>= array.length || i <0){
         setI(0)
     }
-
-
-    console.log(i);
-    console.log("Array: " +array.length);
-
-
+    
+    
+    
     return(
+        <div>
+            <NavBarPY></NavBarPY>
+            
         <div className='color'>
+            
             <div className='div-img'>
                 <h1><strong>PYTHON</strong> Dictionary</h1>
-                <a href="https://www.pexels.com/it-it/foto/mani-scrivania-laptop-internet-4974912/" target="_blank" rel="noreferrer" ><img src={python01} alt="" className='img' /></a>
-                
             </div>
             <div className='dictionary'>
                 <div>
                     {array[i]}
                 </div>
-                <div>
-                    <button onClick={() => setI(i-1)} disabled={i<=0 ? true : false}>Previous</button>
-                    <button onClick={() => setI(i+1)} disabled={i>=array.length-1 ? true : false}> Next</button>
+                <div className='button'>
+                    <button onClick={() => setI(i-1)} disabled={i<=0 ? true : false}><i className='arrow left'></i> Previous </button>
+                    <div></div>
+                    <button onClick={() => setI(i+1)} disabled={i>=array.length-1 ? true : false}> Next <i className="arrow right"></i></button>
                 </div>
             </div>
         </div>
+        </div>
+       /* <div>
+            <NavBarPY></NavBarPY>
+            <Routes >
+                <Route path='/python/start' element={<Start/>}/>
+                <Route path='/plc' element={<PLC/>}/>
+            </Routes>
+        </div>*/
     );
 }
 
