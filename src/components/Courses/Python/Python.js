@@ -28,7 +28,7 @@ function Python(){
         <div className='color'>
             <div className='div-img'>
                 <h1><strong>PYTHON</strong> Dictionary</h1>
-                <a href="https://www.pexels.com/it-it/foto/mani-scrivania-laptop-internet-4974912/" target="_blank"><img src={python01} alt="" className='img' /></a>
+                <a href="https://www.pexels.com/it-it/foto/mani-scrivania-laptop-internet-4974912/" target="_blank" rel="noreferrer" ><img src={python01} alt="" className='img' /></a>
                 
             </div>
             <div className='dictionary'>

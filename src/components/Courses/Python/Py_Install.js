@@ -1,4 +1,3 @@
-import ListGroup from 'react-bootstrap/ListGroup';
 import gif02 from './data/VsCode02.gif'
 import gif01 from './data/VsCode01.gif'
 
@@ -31,7 +30,7 @@ function Py_Install() {
               C:\Users\PC Name&gt;python --version
           </div>
           <div className="br"></div>
-          If python isn't installed, you can <a href="https://www.python.org/downloads/" target="_blank" >Click Here</a> to download it. 
+          If python isn't installed, you can <a href="https://www.python.org/downloads/" target="_blank" rel="noreferrer" >Click Here</a> to download it. 
           <br />
           Then click on the yellow button "Download Python" and wait that it will be downloaded. <br />
           After this, you have to open the file .exe and follow the installation. <br />
@@ -69,7 +68,7 @@ function Py_Install() {
 
         Use Python from CMD is too difficult, because there are no helps.
         But thanks to VS code we can write a script .py easier.
-        To install it <a href="https://code.visualstudio.com/download" target="_blank" > Click Here</a> and choose your OS.
+        To install it <a href="https://code.visualstudio.com/download" target="_blank" rel="noreferrer" > Click Here</a> and choose your OS.
         You have to follow the installation and then open it. 
 
         Before to create a file .py you have to install extension of Python:
