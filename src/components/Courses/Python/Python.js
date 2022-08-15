@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-pascal-case */
 import React from 'react';
 import '../Courses.css';
 import '../../../App.css';
@@ -5,8 +6,8 @@ import '../../Home/Home.css'
 import {useState} from "react";
 import Install from './Py_Install.js'
 import Start from './Py_start.js'
-import NavBarPY from './NavBarPY.js'
-
+import NavBar_component from '../../NavBar.js'
+import Button from 'react-bootstrap/Button';
 
 function Python(){
     const[i,setI] = useState(0)
@@ -28,17 +29,21 @@ function Python(){
     if(i>= array.length || i <0){
         setI(0)
     }
+   
     
     return(
         <div>
-            <NavBarPY></NavBarPY>
+            <NavBar_component></NavBar_component>
         <div className='color'>
             
             <div className='div-img'>
                 <h1><strong>PYTHON</strong> Dictionary</h1>
             </div>
-            <button><a href="/python/install">Installation and Setup</a></button>
-            <button><a href="/python/start">Python Syntax</a></button>
+            <div className="btns">
+                <Button variant="outline-success"><a href="/python/install" className='btn-a'>Installation and Setup</a></Button>
+                <Button variant="outline-success"><a href="/python/start" className='btn-a'>Python Syntax</a></Button>
+            </div>
+
             {/*<div className='dictionary'>
                 <div>
                     {array[i]}

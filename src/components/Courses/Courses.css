@@ -57,11 +57,12 @@
 }
 
 .arrow{
-    border: solid #f3b700;
+    border: solid orange;
     border-width: 0 3px 3px 0 ;
     display: inline-block;
     padding: 3px;
 }
+
 
 .left{
     transform: rotate(135deg);
@@ -124,3 +125,37 @@ div .cmd{
     font-size: 1.25em;
     font-weight: bold;
 }
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.btns Button{
+    margin: 2.5vw;
+    padding: 1vh;
+    width: 50vw;
+    font-size: 1.05em;
+    font-weight: bolder;
+}
+
+.btn-back{
+    position: fixed;
+    top: 92.5vh;
+    left: 70vw;
+}
+
+.btn-back Button{
+    width: 26vw;
+    height: 5vh;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.btn-a a:hover, a:active, a:focus{
+    text-decoration: none;
+    color: inherit;
+}
+

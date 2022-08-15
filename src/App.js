@@ -12,8 +12,7 @@ import './components/Courses/Courses.css'
 
 import Start from './components/Courses/Python/Py_start.js'
 import Install from './components/Courses/Python/Py_Install';
-
-function App() {
+function App(){
   return (
     <>
       <Routes >

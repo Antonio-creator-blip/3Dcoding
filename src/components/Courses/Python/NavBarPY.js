@@ -4,9 +4,11 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import '../../../App.css';
 import '../../Home/Home.css'
+import Button from 'react-bootstrap/Button';
 
 function NavBar_component() {
   return (
+    <div>
     <Navbar  expand="lg" id='navbar'>
       <Container fluid>
           <Navbar.Brand href="#home">
@@ -30,6 +32,7 @@ function NavBar_component() {
             navbarScroll
             id="text-navbar"
           >
+            <Nav.Link href="/" className='text-navbar'>Home</Nav.Link>
             <Nav.Link href="/python/install" className='text-navbar'>Installation and Setup</Nav.Link>
             <Nav.Link href="/python/start" className='text-navbar'> <a href="/python/start">Syntax</a> </Nav.Link>
             <NavDropdown title="Programming Languages" id="navbarScrollingDropdown" className='text-navbar'>
@@ -64,6 +67,10 @@ function NavBar_component() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    <div className='btn-back'>
+      <Button variant='outline-danger' href='/python'> <i className='arrow left'></i> Go Back </Button>
+    </div>
+    </div>
   );
 }
 
