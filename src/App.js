@@ -7,7 +7,6 @@ import Python from './components/Courses/Python/Python.js'
 import {Routes,Route} from "react-router-dom";
 import './components/Courses/Courses.css';
 import './components/Home/Home.css'
-import Start from './components/Courses/Python/Py_start'
 
 function App() {
   return (

@@ -1,8 +1,7 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import '../Courses.css';
 import '../../Home/Home.css';
 import '../../../App.css'
-import Py from './Python.js'
 
 function Py_start() {
     document.title = "Python Syntax"

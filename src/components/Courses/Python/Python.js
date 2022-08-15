@@ -6,7 +6,6 @@ import {useState} from "react";
 import Install from './Py_Install.js'
 import Start from './Py_start.js'
 import NavBarPY from './NavBarPY.js'
-import {Routes,Route} from "react-router-dom";
 
 
 function Python(){
